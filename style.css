@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+
+:root {
+     --cyan: hsl(179, 62%, 43%);
+     --brightYellow: hsl(71, 73%, 54%);
+     --lightGray: hsl(204, 43%, 93%);
+     --grayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+     background-color: var(--lightGray);
+     font-size: 16px;
+     font-family: 'Karla', sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+}
+
+.main {
+     /*outline: 1px solid #000;*/
+     height: 720px;
+     width: 310px;
+     border-radius: 8px;
+     overflow: hidden;
+}
+
+
+.description {
+     background-color: #fff;
+     height: 270px;
+     padding: 30px 20px;
+}
+
+.d-first {
+     color: var(--cyan);
+     padding-bottom: 20px;
+     font-size: 1.3em;
+}
+
+.d-second {
+     color: var(--brightYellow);
+     padding-bottom: 20px;
+     font-size: .95em;
+     line-height: 1.5em;
+}
+
+.d-third {
+     color: var(--grayishBlue);
+     font-size: .80em;
+     line-height: 1.75em;
+}
+
+.suscription {
+     /*background-color: var(--cyan);*/
+     height: 450px;
+}
+
+.sus-price {
+     background-color: var(--cyan);
+     padding: 20px;
+     height: 230px;
+     color: var(--lightGray);
+}
+
+.price-monthly {
+     display: flex;
+     padding-top: 15px;
+}
+
+.p-first {
+     padding-top: 5px;
+}
+
+.p-third {
+     padding-top: 8px;
+     padding-left: 12px;
+}
+
+.p-fourth {
+     padding-top: 10px;
+     padding-bottom: 30px;
+}
+
+.p-fifth {
+     background-color: var(--brightYellow);
+     height: 45px;
+     width: 260px;
+     border-radius: 4px;
+     text-align: center;
+     padding-top: 12px;
+     font-weight: 700;
+     box-shadow: 2px 8px 8px hsl(179, 67%, 34%);
+}
+
+.sus-info {
+     padding: 20px;
+     height: 220px;
+     background-color: hsl(179, 51%, 52%);
+}
+
+.info-title {
+     color: var(--lightGray);
+}
+
+.info-description {
+     color: var(--lightGray);
+     padding-top: 15px;
+}
+
+h5 {
+     font-weight: 400;
+     letter-spacing: 0.5px;
+     line-height: 20px;
+     font-size: 14px;
+}
+
+/*.attribution {
+     font-size: 11px;
+     text-align: center;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}*/
+
+@media screen and (min-width: 720px) {
+     .main {
+          height: 480px;
+          width: 640px;
+     }
+
+     .description {
+          height: 220px;
+          padding: 40px 55px 0px 40px;
+     }
+
+     .d-first {
+          font-size: 1.5em;
+     }
+
+     .d-second {
+          font-size: 1em;
+          padding-bottom: 8px;
+     }
+
+     .d-third {
+          font-size: 0.93em;
+          line-height: 1.8em;
+     }
+
+     .suscription {
+          display: flex;
+          height: 260px;
+     }
+
+     .sus-price,
+     .sus-info {
+          height: auto;
+          width: 320px;
+          padding: 30px 40px 30px 40px;
+     }
+
+     .info-title {
+          padding-bottom: 5px;
+     }
+
+     .p-fifth {
+          margin-top: 2px;
+          width: 230px;
+     }
+}
